@@ -9,7 +9,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
-
-    
+    <title>Tambah Data Siswa</title>
+</head>
+<body>
+    <div class="judul">
+        <p>Tambah Data Siswa</p>
+    </div>
+    <form action="simpan.php" method="post">
+        <div class="card">
+            <table cellpadding="12" cellspacing="0">
+                <tr>
+                    <th>ID SISWA</th>
+                    <th>:</th>
+                    <th><input type="text" required="required" placeholder="Id Siswa" name="id_siswa" class="text-box"></th>
+                </tr>
+                <tr>
+                    <th>NAMA SISWA</th>
+                    <th>:</th>
+                    <th><input type="text" required="required" placeholder="Nama Siswa" name="nama_siswa" class="text-box"></th>
+                </tr>
+                <tr>
+                    <th>KELAS</th>
+                    <th>:</th>
+                    <th><input type="text" required="required" placeholder="Kelas" name="kelas" class="text-box"></th>
+                </tr>
+                <tr>
+                    <th>JURUSAN</th>
+                    <th>:</th>
+                    <th><input type="text" required="required" placeholder="Jurusan" name="jurusan" class="text-box"></th>
+                </tr>
+            </table>
+            <input type="submit" name="simpan" class="btn_create" value="Create Siswa">
+            <a href="tampil_siswa.php" class="btn_back">Back</a>
+        </div>
+    </form>
 </body>
 </html>
