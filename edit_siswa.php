@@ -28,13 +28,31 @@ if(mysqli_num_rows($query) < 1){
     <title>Ubah Data Siswa</title>
 </head>
 <body>
-<div class="judul">
-        <p>Ubah Data Siswa</p>
-    </div>
+     <!-- sidebar -->
+     <div class="sidebar">
+        <div class="head">
+            <p>Zerone App</p>
+        </div>
 
-    <form action="edit.php">
+        <ul>
+            <li><a href="tampil_siswa.php"  class="side-siswa">Data Siswa</a></li>
+            <li><a href="#"  class="side-buku">Data Buku</a></li>
+        </ul>
+    </div>
+    <!-- contetn -->
+    <div class="judul">
+            <p>Ubah Data Siswa</p>
+        </div>
+
+    <form action="edit.php" method="POST">
+        <!-- card -->
         <div class="card">
             <table cellpadding="10" cellspacing="0">
+                <tr>
+                    <th></th>
+                    <th></th>
+                    <th><input type="hidden" class="text-box" name="id_siswa" value="<?= $pel['id_siswa']?>"></th>
+                </tr>
                 <tr>
                     <th>NAMA SISWA</th>
                     <th>:</th>
@@ -51,7 +69,7 @@ if(mysqli_num_rows($query) < 1){
                     <th><input type="text" class="text-box" name="jurusan" value="<?= $pel['jurusan']?>"></th>
                 </tr>
             </table>
-            <input type="submit" class="btn_edit" name="submit" value="Save Edit">
+            <input type="submit" class="btn_edit" name="submit" onclick=" return confirm('Apakah anda yakin ingin mengubah data tersebut?');" value="Save Edit">
             <a href="tampil_siswa.php" class="btn_back">Back</a>
         </div>
     </form>

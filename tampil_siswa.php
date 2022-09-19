@@ -19,13 +19,25 @@ include "koneksi.php";
     <title>Tampil Data Siswa</title>
 </head>
 <body>
+    <!-- sidebar -->
+    <div class="sidebar">
+        <div class="head">
+            <p>Zerone App</p>
+        </div>
+
+        <ul>
+            <li><a href="tampil_siswa.php"  class="side-siswa">Data Siswa</a></li>
+            <li><a href=""  class="side-buku">Data Buku</a></li>
+        </ul>
+    </div>
+
     <div class="judul">
         <p>Data Siswa</p>
     </div>
     
     <!-- card -->
     <div class="card">
-        <a href="tambah_siswa.html" class="btn_create">Create Siswa</a>
+        <a href="tambah_siswa.html" class="btn_add">Add Siswa</a>
         <table border="1" cellpadding="10" cellspacing="0">
             <tr>
                 <th>NO</th>
@@ -49,8 +61,8 @@ include "koneksi.php";
                 <td>$pel[kelas]</td>
                 <td>$pel[jurusan]</td>
                 <td>
-                    <a href='edit_siswa.php?id=$pel[id_siswa]'>Edit</a>
-                    <a href='hapus.php?id=$pel[id_siswa]'>Delete</a>
+                    <a href='edit_siswa.php?id=$pel[id_siswa]' class = \"btn_edit\">Edit</a>
+                    <a href='hapus.php?id=$pel[id_siswa]' class = \"btn_delete\" onClick = \" return confirm('Apakah anda yakin ingin menghapus data ini?')\">Delete</a>
                 </td>
             </tr>
             ";
