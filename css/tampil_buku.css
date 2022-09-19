@@ -1,0 +1,132 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    margin: 0;
+    transition: all .2s ease-in-out;
+}
+
+.judul p{
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 34px;
+    position: absolute;
+    left: 420px;
+    top: 34px;
+}
+
+.card{
+    position: absolute;
+    left: 420px;
+    top: 134px;
+    width: fit-content;
+    height: fit-content;
+    padding: 23px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.card table{
+    border-color: #D9D9D9;
+    margin-top: 23px;
+}
+
+table th{
+    background-color: #0D1721;
+    color: #fff;
+}
+
+.btn_add{
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 0px 1.5px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 10px 23px;
+    background-color: #5463FF;
+}
+
+.btn_add:hover{
+    transition: all .2s ease-in-out;
+    background-color: #1d2ffa;
+}
+
+.btn_edit{
+    background-color: #FFB200;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 36px;
+}
+
+.btn_delete{
+    background-color: #FF1E00;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px 48px;
+}
+
+.sidebar{
+    width: 290px;
+    height: 100vh;
+    position: fixed;
+    background-color: #0D1721;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+}
+
+.head{
+    height: 70px;
+    background: rgba(40, 42, 53, 0.9);
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.head p{
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidebar ul{
+    padding-left: 36px;
+    margin: 42px 0;
+    line-height: 44px;
+}
+
+.sidebar ul a{
+    font-size: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 30px;
+}
+
+.side-buku{
+    background-color: #fff;
+    color: #0D1721;
+    padding: 15px 80px 15px 29px;
+    border-radius: 12px;
+    font-weight: bold;
+}
+
+.side-siswa{
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+.side-siswa:hover{
+    background-color: #fff;
+    color: #0D1721;
+    padding: 15px 80px 15px 29px;
+    border-radius: 12px;
+    font-weight: bold;
+}
