@@ -32,6 +32,17 @@ body{
     font-size: 16px;
 }
 
+.text-box:focus{
+    width: 602px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    outline-color: #5463FF; 
+    padding: 10px 13px;
+    font-size: 16px;
+}
+
 .btn_create{
     color: #fff;
     font-weight: bold;
