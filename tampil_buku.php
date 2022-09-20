@@ -15,7 +15,9 @@ include "koneksi.php";
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
     <!-- link css -->
-    <link rel="stylesheet" href="css/tampil_buku.css">
+    <style>
+        <?php include "css/tampil_buku.css"; ?>
+    </style>
     <title>Tampil Data Buku</title>
 </head>
 <body>
@@ -56,15 +58,15 @@ include "koneksi.php";
         while($pel = mysqli_fetch_array($query)){
             echo "
             <tr>
-                <td>$no</td>
+                <td>$no.</td>
                 <td>$pel[kode_buku]</td>
                 <td>$pel[judul_buku]</td>
                 <td>$pel[pengarang]</td>
                 <td>$pel[penerbit]</td>
                 <td>$pel[thn_terbit]</td>
                 <td>
-                    <a href='edit_siswa.php?id=$pel[kode_buku]' class = \"btn_edit\">Edit</a>
-                    <a href='hapus.php?id=$pel[kode_buku]' class = \"btn_delete\" onClick = \" return confirm('Apakah anda yakin ingin menghapus data ini?')\">Delete</a>
+                    <a href='edit_buku.php?id=$pel[kode_buku]' class = \"btn_edit\">Edit</a>
+                    <a href='hapus_buku.php?id=$pel[kode_buku]' class = \"btn_delete\" onClick = \" return confirm('Apakah anda yakin ingin menghapus data ini?')\">Delete</a>
                 </td>
             </tr>
             ";

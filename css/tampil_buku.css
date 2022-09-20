@@ -15,13 +15,13 @@ body{
     font-weight: bold;
     line-height: 34px;
     position: absolute;
-    left: 420px;
+    left: 325px;
     top: 34px;
 }
 
 .card{
     position: absolute;
-    left: 420px;
+    left: 325px;
     top: 134px;
     width: fit-content;
     height: fit-content;
