@@ -27,7 +27,7 @@ include "koneksi.php";
 
         <ul>
             <li><a href="tampil_siswa.php"  class="side-siswa">Data Siswa</a></li>
-            <li><a href=""  class="side-buku">Data Buku</a></li>
+            <li><a href="tampil_buku.php"  class="side-buku">Data Buku</a></li>
         </ul>
     </div>
 
@@ -55,7 +55,7 @@ include "koneksi.php";
         while($pel = mysqli_fetch_array($query)){
             echo "
             <tr>
-                <td>$no</td>
+                <td>$no.</td>
                 <td>$pel[id_siswa]</td>
                 <td>$pel[nama_siswa]</td>
                 <td>$pel[kelas]</td>
