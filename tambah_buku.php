@@ -5,13 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/e1031afe90.js" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
     <!-- font quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
 
     <!-- link css -->
-    <link rel="stylesheet" href="css/tambah_buku.css">
+    <style>
+        <?php 
+        include "css/tambah_buku.css"; ?>
+    </style>
     <title>Tambah Data Buku</title>
 </head>
 <body>
@@ -22,14 +30,14 @@
         </div>
 
         <ul>
-            <li><a href="tampil_siswa.php"  class="side-siswa">Data Siswa</a></li>
-            <li><a href="tampil_buku.php"  class="side-buku">Data Buku</a></li>
+            <li><a href="tampil_siswa.php"  class="side-siswa"><i class="fa-solid fa-users"></i>Data Siswa</a></li>
+            <li><a href="tampil_buku.php"  class="side-buku"><i class="fa-solid fa-book"></i>Data Buku</a></li>
         </ul>
     </div>
     
     <!-- card -->
     <div class="judul">
-        <p>Tambah Data Buku</p>
+        <p>Tambah Data <span>Buku</span></p>
     </div>
     <form action="simpan_buku.php" method="post">
         <div class="card">
@@ -61,7 +69,7 @@
                     <th><input type="text" required="required" placeholder="Tahun Terbit" name="thn_terbit" class="text-box"></th>
                 </tr>
             </table>
-            <input type="submit" name="simpan" class="btn_create" value="Create Buku">
+            <button type="submit" name="simpan" class="btn_create">Create Buku <i class="fa-solid fa-plus-circle"></i></button>
             <a href="tampil_buku.php" class="btn_back">Back</a>
         </div>
     </form>

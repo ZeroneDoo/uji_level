@@ -11,7 +11,7 @@ body{
 
 .card{
     position: absolute;
-    left: 420px;
+    left: 370px;
     top: 125px;
     width: fit-content;
     height: fit-content;
@@ -53,7 +53,7 @@ body{
     border-radius: 10px;
     padding: 10px 23px;
     background-color: #5463FF;
-    margin: 18px 15px 34px 530px;
+    margin: 18px 15px 34px 500px;
 }
 
 .btn_create:hover{
@@ -74,7 +74,7 @@ body{
 
 .judul p {
     position: absolute;
-    left: 420px;
+    left: 370px;
     top: 28px;
     font-size: 32px;
     line-height: 40px;
@@ -82,10 +82,14 @@ body{
 }
 
 
+span{
+    color: #1d2ffa;
+}
+
 /* sidebar */
 
 .sidebar{
-    width: 290px;
+    width: 17%;
     height: 100vh;
     position: fixed;
     background-color: #0D1721;
@@ -102,20 +106,24 @@ body{
 }
 
 .head p{
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: medium;
     color: #fff;
     cursor: pointer;
 }
 
 .sidebar ul{
-    padding-left: 36px;
-    margin: 42px 0;
-    line-height: 44px;
+    padding-left: 16px;
+    margin: 22px 0;
+    line-height: 40px;
+}
+
+.sidebar ul i{
+    margin-right: 10px;
 }
 
 .sidebar ul a{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidebar li {
@@ -125,7 +133,7 @@ body{
 .side-buku{
     background-color: #fff;
     color: #0D1721;
-    padding: 15px 80px 15px 29px;
+    padding: 12px 50px 12px 19px;
     border-radius: 12px;
     font-weight: bold;
 }
@@ -138,7 +146,7 @@ body{
 .side-siswa:hover{
     background-color: #fff;
     color: #0D1721;
-    padding: 15px 80px 15px 29px;
+    padding: 12px 38px 12px 19px;
     border-radius: 12px;
     font-weight: bold;
 }

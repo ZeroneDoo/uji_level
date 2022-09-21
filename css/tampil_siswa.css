@@ -15,13 +15,17 @@ body{
     font-weight: bold;
     line-height: 34px;
     position: absolute;
-    left: 420px;
+    left: 400px;
     top: 34px;
+}
+
+span{
+    color: #1d2ffa;
 }
 
 .card{
     position: absolute;
-    left: 420px;
+    left: 400px;
     top: 134px;
     width: fit-content;
     height: fit-content;
@@ -56,6 +60,53 @@ table th{
     transition: all .2s ease-in-out;
     background-color: #1d2ffa;
 }
+.top{
+    display: flex;
+    justify-content: space-between;
+}
+
+form{
+    display: flex;
+    width: 500px;
+    justify-content: space-evenly;
+}
+
+.search-box{
+    width: 90%;
+    height: 40px;
+    background: #FFFFFF;
+    border: 2px solid #5463FF;
+    border-radius: 10px;
+    padding: 10px 13px;
+    font-size: 16px;
+}
+
+.search-box:focus{
+    width: 90%;
+    height: 40px;
+    outline-color: #1d2ffa;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 10px 13px;
+    font-size: 16px;
+}
+
+.btn-search{
+    width: 40px;
+    height: 40px;
+    background-color: #1d2ffa;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 0 3px 0 0 ;
+    border-radius: 50%;;
+}
+
+i{
+    margin-left: 5px;
+}
 
 .btn_edit{
     background-color: #FFB200;
@@ -74,7 +125,7 @@ table th{
 }
 
 .sidebar{
-    width: 290px;
+    width: 17%;
     height: 100vh;
     position: fixed;
     background-color: #0D1721;
@@ -91,20 +142,24 @@ table th{
 }
 
 .head p{
-    font-size: 24px;
-    font-weight: bold;
+    font-size: 20px;
+    font-weight: medium;
     color: #fff;
     cursor: pointer;
 }
 
 .sidebar ul{
-    padding-left: 36px;
-    margin: 42px 0;
-    line-height: 44px;
+    padding-left: 16px;
+    margin: 22px 0;
+    line-height: 40px;
+}
+
+.sidebar ul i{
+    margin-right: 10px;
 }
 
 .sidebar ul a{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sidebar li {
@@ -114,7 +169,7 @@ table th{
 .side-siswa{
     background-color: #fff;
     color: #0D1721;
-    padding: 15px 80px 15px 29px;
+    padding: 12px 50px 12px 19px;
     border-radius: 12px;
     font-weight: bold;
 }
@@ -127,7 +182,7 @@ table th{
 .side-buku:hover{
     background-color: #fff;
     color: #0D1721;
-    padding: 15px 80px 15px 29px;
+    padding: 12px 60px 12px 19px;
     border-radius: 12px;
     font-weight: bold;
 }
